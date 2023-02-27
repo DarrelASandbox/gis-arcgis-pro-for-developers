@@ -15,11 +15,22 @@
 - **ArcGIS Desktop**
   - ArcGIS Pro (Requires Python 3)
   - ArcMap
-- **Shapefile (Natural Earth)**
 
 ![file_geodatabase](00-diagrams/file_geodatabase.png)
 
-- [Natural Earth](https://www.naturalearthdata.com/)
+&nbsp;
+
+- Shapefile
+  - [Natural Earth](https://www.naturalearthdata.com/)
+- Layer
+- Attribute Table
+
+&nbsp;
+
+- **ArcGIS Pro**
+  - Analysis Tab -> Python -> Python window/ Python Notebook
+  - Analysis Tab -> ModelBuilder
+- Python IDLE
 
 &nbsp;
 
