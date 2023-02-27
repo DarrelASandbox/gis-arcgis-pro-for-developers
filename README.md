@@ -15,6 +15,10 @@
 - **ArcGIS Desktop**
   - ArcGIS Pro (Requires Python 3)
   - ArcMap
+- **Documentation**
+  - [ArcGIS Pro help](https://pro.arcgis.com/en/pro-app/latest/help/main/welcome-to-the-arcgis-pro-app-help.htm)
+  - [ArcGIS Pro geoprocessing tool reference](https://pro.arcgis.com/en/pro-app/latest/tool-reference/main/arcgis-pro-tool-reference.htm)
+  - [Terminology for working with projects](https://pro.arcgis.com/en/pro-app/latest/help/projects/terminology-for-working-with-projects.htm)
 
 ![file_geodatabase](00-diagrams/file_geodatabase.png)
 
