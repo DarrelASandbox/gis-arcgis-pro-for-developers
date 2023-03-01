@@ -44,6 +44,7 @@
   - [Natural Earth](https://www.naturalearthdata.com/)
 - Layer
 - Attribute Table
+- Labeling Properties...
 
 &nbsp;
 
