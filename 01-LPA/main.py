@@ -1,7 +1,7 @@
 # NOTES:
 #   - Pathing may need to hardcore path to drive
 
-import arcpy  # type: ignore
+import arcpy
 
 
 def print_msg(msg):
@@ -115,17 +115,54 @@ workspace = r"01-LPA\Data"
 dataList = []
 
 for dirpath, dirnames, filenames in arcpy.da.Walk(workspace):
-# for dirpath, dirnames, filenames in arcpy.da.Walk(
-#     workspace, datatype="FeatureClass", type=["Point", "Polyline"]
-# ):
-# for dirpath, dirnames, filenames in arcpy.da.Walk(
-#     workspace,datatype="RasterDataset",type=["JPG","PNG","TIF"]):
+    # for dirpath, dirnames, filenames in arcpy.da.Walk(
+    #     workspace, datatype="FeatureClass", type=["Point", "Polyline"]
+    # ):
+    # for dirpath, dirnames, filenames in arcpy.da.Walk(
+    #     workspace,datatype="RasterDataset",type=["JPG","PNG","TIF"]):
     for filename in filenames:
         dataList.append(rf"{dirpath}\{filename}")
 
 print(dataList)
 print(f"\nFound data elements in {workspace}")
 print("\nScript completed!")
+
+
+###########################################################################
+
+
+sde_path = r"C:\path\to\my\connection.sde"
+key_values = {}
+
+with open(sde_path, "r") as sde_file:
+    for line in sde_file:
+        # split the line into key and value pairs
+        key, value = line.strip().split("=", 1)
+        key_values[key] = value
+
+for key, value in key_values.items():
+    print(f"{key}: {value}")
+
+
+###########################################################################
+
+
+gdb_path = r"C:\path\to\my\geodatabase.gdb"
+arcpy.env.workspace = gdb_path
+desc = arcpy.Describe(gdb_path)
+
+print("Name: " + desc.name)
+print("Data type: " + desc.dataType)
+print("Release: " + desc.release)
+print("Version: " + desc.version)
+print("Size: " + str(desc.fileSize))
+print("Description: " + desc.description)
+print("Spatial reference: " + desc.spatialReference.name)
+print("Feature dataset count: " + str(desc.featureDatasetCount))
+print("Feature class count: " + str(desc.featureClassCount))
+print("Table count: " + str(desc.tableCount))
+print("Relationship class count: " + str(desc.relationshipClassCount))
+print("Domain count: " + str(desc.domainCount))
 
 
 ###########################################################################
