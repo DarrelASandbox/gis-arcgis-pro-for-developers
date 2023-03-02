@@ -51,6 +51,7 @@
 - **ArcGIS Pro**
   - Analysis Tab -> Python -> Python window/ Python Notebook
   - Analysis Tab -> ModelBuilder
+  - Analysis Tab -> Tools -> Geoprocessing
 - Python IDLE
 
 &nbsp;
