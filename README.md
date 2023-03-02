@@ -45,6 +45,12 @@
 - Layer
 - Attribute Table
 - Labeling Properties...
+- `.tbx` vs `.pyt`
+  - The main difference between a `.tbx` file and a `.pyt` file in ArcGIS is that a `.tbx` file is a standard toolbox that can contain geoprocessing tools written in a variety of programming languages (including Python), while a `.pyt` file is a custom Python toolbox that contains only Python script tools
+  - Here are some more details about each type of toolbox:
+    - `.tbx` file: A `.tbx` file is a standard toolbox file that can contain any type of geoprocessing tool, including tools written in Python, VBScript, JScript, or .NET. A `.tbx` file is created using ArcGIS Desktop or ArcGIS Pro and can be shared with others by copying it to a shared network location or sending it as an email attachment. The tools in a `.tbx` file can be accessed and used in ArcGIS Desktop or ArcGIS Pro.
+    - `.pyt` file: A `.pyt` file is a custom Python toolbox that contains only Python script tools. A `.pyt` file is created using Python scripting in ArcGIS and provides greater flexibility and customization options than a standard `.tbx` file. Python script tools can be used to automate complex geoprocessing workflows or perform custom analysis tasks that are not available in the standard ArcGIS tools. A `.pyt` file can be shared with others by copying it to a shared network location or by including it in an ArcGIS add-in.
+  - In general, a `.tbx` file is easier to create and can contain a wider range of geoprocessing tools, while a `.pyt` file requires more advanced Python programming skills but provides greater flexibility and customization options. The choice between a `.tbx` file and a `.pyt` file will depend on the specific needs and requirements of your project.
 
 &nbsp;
 
